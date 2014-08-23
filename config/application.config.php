@@ -3,7 +3,7 @@
 return [
     'modules' => [
         'ZfcTwig',
-        'GamerPowered\Steam',
+        'GamerPowered\FreeWeek',
     ],
     'module_listener_options' => [
         'config_glob_paths' => ['config/autoload/{,*.}{global,local}.php'],

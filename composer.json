@@ -10,8 +10,8 @@
     },
     "autoload": {
         "psr-4": {
-            "GamerPowered\\Steam\\": [
-                "module/Steam/src"
+            "GamerPowered\\FreeWeek\\": [
+                "module/FreeWeek/src"
             ]
         }
     }

@@ -1,6 +1,6 @@
 <?php
 
-namespace GamerPowered\Steam;
+namespace GamerPowered\FreeWeek;
 
 use Zend\ModuleManager\Feature\ServiceProviderInterface;
 use Zend\Mvc\MvcEvent;

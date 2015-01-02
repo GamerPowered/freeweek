@@ -27,6 +27,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=200)),
                 ('square_url', models.URLField(default=b'http://img3.wikia.nocookie.net/__cb20120730015737/leagueoflegends/images/9/95/ChampionSquare.png')),
+                ('champion_id', models.IntegerField(unique=True, null=True)),
             ],
             options={
             },

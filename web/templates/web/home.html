@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Freeweek</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    {% if heroes %}
+        <div id="heroes"><h1>Heroes of the Storm</h1>
+            {% for week in heroes %}
+            <h2>{{ week }}</h2>
+            <div>
+                <img src="{{ week.slot1.bust_url }}" alt="{{ week1.slot1.name }}" />
+                <img src="{{ week.slot2.bust_url }}" alt="{{ week1.slot2.name }}" />
+                <img src="{{ week.slot3.bust_url }}" alt="{{ week1.slot3.name }}" />
+                <img src="{{ week.slot4.bust_url }}" alt="{{ week1.slot4.name }}" />
+                <img src="{{ week.slot5.bust_url }}" alt="{{ week1.slot5.name }}" />
+                <img src="{{ week.slot6.bust_url }}" alt="{{ week1.slot6.name }}" />
+                <img src="{{ week.slot7.bust_url }}" alt="{{ week1.slot7.name }}" />
+            </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if lol %}
+        <div id="lol"><h1>League of Legends</h1>
+            {% for week in lol %}
+            <h2>{{ week }}</h2>
+            <div>
+                <img src="{{ week.slot1.square_url }}" alt="{{ week1.slot1.name }}" />
+                <img src="{{ week.slot2.square_url }}" alt="{{ week1.slot2.name }}" />
+                <img src="{{ week.slot3.square_url }}" alt="{{ week1.slot3.name }}" />
+                <img src="{{ week.slot4.square_url }}" alt="{{ week1.slot4.name }}" />
+                <img src="{{ week.slot5.square_url }}" alt="{{ week1.slot5.name }}" />
+                <img src="{{ week.slot6.square_url }}" alt="{{ week1.slot6.name }}" />
+                <img src="{{ week.slot7.square_url }}" alt="{{ week1.slot7.name }}" />
+                <img src="{{ week.slot8.square_url }}" alt="{{ week1.slot8.name }}" />
+                <img src="{{ week.slot9.square_url }}" alt="{{ week1.slot9.name }}" />
+                <img src="{{ week.slot10.square_url }}" alt="{{ week1.slot10.name }}" />
+
+            </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</body>
+</html>
+

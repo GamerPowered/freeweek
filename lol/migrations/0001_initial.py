@@ -26,6 +26,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('name', models.CharField(max_length=200)),
+                ('square_url', models.URLField(default=b'http://img3.wikia.nocookie.net/__cb20120730015737/leagueoflegends/images/9/95/ChampionSquare.png')),
             ],
             options={
             },
@@ -34,6 +35,12 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='freeweek',
             name='slot1',
+            field=models.ForeignKey(related_name='+', to='lol.Hero'),
+            preserve_default=True,
+        ),
+        migrations.AddField(
+            model_name='freeweek',
+            name='slot10',
             field=models.ForeignKey(related_name='+', to='lol.Hero'),
             preserve_default=True,
         ),
@@ -70,6 +77,18 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='freeweek',
             name='slot7',
+            field=models.ForeignKey(related_name='+', to='lol.Hero'),
+            preserve_default=True,
+        ),
+        migrations.AddField(
+            model_name='freeweek',
+            name='slot8',
+            field=models.ForeignKey(related_name='+', to='lol.Hero'),
+            preserve_default=True,
+        ),
+        migrations.AddField(
+            model_name='freeweek',
+            name='slot9',
             field=models.ForeignKey(related_name='+', to='lol.Hero'),
             preserve_default=True,
         ),

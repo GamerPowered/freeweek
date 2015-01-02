@@ -6,3 +6,11 @@ vendor/
 .idea/workspace.xml
 .idea/php.xml
 composer.phar
+
+#################
+## Django
+#################
+venv
+*.pyc
+staticfiles
+django.db

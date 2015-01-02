@@ -1,1 +1,2 @@
-web: vendor/bin/heroku-php-nginx -C nginx_app.conf public/
+web: gunicorn freeweek.wsgi --log-file -
+

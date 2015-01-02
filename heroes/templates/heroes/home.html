@@ -1,0 +1,14 @@
+{% if weeks %}
+    {% for week in weeks %}
+    <h1>{{ week }}</h1>
+    <ul>
+        <li>{{ week.slot1 }}</li>
+        <li>{{ week.slot2 }}</li>
+        <li>{{ week.slot3 }}</li>
+        <li>{{ week.slot4 }}</li>
+        <li>{{ week.slot5 }}</li>
+        <li>{{ week.slot6 }}</li>
+        <li>{{ week.slot7 }}</li>
+    </ul>
+    {% endfor %}
+{% endif %}
